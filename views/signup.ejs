@@ -1,0 +1,30 @@
+<html lang ="en">
+  <%- include('./partials/head.ejs') %>
+
+<body>
+  
+  
+  <header>
+    <h1>Welcome to Delicious Delights</h1>
+  </header>
+
+    <div class="create-blog content">
+    
+      <form action="/menu" method="post">
+        <h3>SignUp:</h3>
+        <label for="title">Email: </label>
+        <input type="email" id="title" name="title" required>
+
+        <label for="snippet">Password:</label>
+        <input type="text" id="snippet" name="snippet" required>
+        
+        <button>Create</button>
+        
+    
+      </form>
+      
+    
+    </div>
+    
+</body>
+</html> 

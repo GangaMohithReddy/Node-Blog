@@ -1,0 +1,80 @@
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="headg">
+    <header>
+      <h1>Welcome to Delicious Delights</h1>
+    </header>
+    <div class="heading">
+      <h1>Menu :</h1>
+      <div class="searchbar">
+        <input type="text" id="searchText"  class="searchbox" placeholder="Quick Search" data-search/>
+      </div>
+    </div>
+  </div>
+
+  <div class="a">
+    
+    <div id="container" container>
+      
+    </div>
+
+    <div id="cart">
+
+      <h2>Order Details:</h2>
+
+      <div id="oc">
+
+        <div class="ti">
+          <h5>Name:</h5>
+          <h5>Prize:</h5>
+          <h5>Quantity:</h5> 
+        </div>
+
+        <div id="it" it>
+
+        </div>
+        
+        <div id="tot">          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <template data-temp>
+    <div id="item">
+      <img src="" data-img>
+      <p class="name" data-title></p>
+      <p class="price" data-price></p>
+      <button class="add" ac> Add to cart </button>
+      <div class="quantity">
+        <p>Quantity:</p>
+        <p class="quant" quant></p>  
+      </div>
+      <div class="aaa">
+      
+      <button  class="aa" del> Del </button>
+      </div>
+    </div>
+  </template>
+
+  <template cc>
+    <div id="itt">
+      <span class="cname" cname></span>
+      <span class="cprice" cprice></span>
+      <span class="cquant" cquant></span>
+      <span id="ctot"class="hide" ctot></span>
+    </div>
+    </template>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
