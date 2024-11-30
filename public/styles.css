@@ -1,114 +1,129 @@
-body {
-  font-family: Arial, sans-serif;
-  background-image: url(https://static.wixstatic.com/media/c837a6_94887042ef304568a8406628f7d030d1~mv2.jpg/v1/fill/w_1688,h_879,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_94887042ef304568a8406628f7d030d1~mv2.jpg);
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+    body{
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      font-family: 'Noto Serif', serif;
+      max-width: 1200px;
+    }
+    p, h1, h2, h3, a, ul{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: #222;
+    }
 
-header {
-  background-color:none;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+    /* nav & footer styles */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      text-transform: uppercase;
+    }
+    nav ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    nav li{
+      list-style-type: none;
+      margin-left: 20px;
+    }
+    nav h1{
+      font-size: 3em;
+    }
+    nav p, nav a{
+      color: #777;
+      font-weight: 300;
+    }
+    footer{
+      color: #777;
+      text-align: center;
+      margin: 80px auto 20px;
+    }
+    h2{
+      margin-bottom: 40px;
+    }
+    h3{
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    .content{
+      margin-left: 20px;
+      
+    }
 
-h1 {
-  margin: 0;
-  font-size: 36px;
-}
+    /* index styles */
+    .blogs a{
+      display: block;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 6px solid rgba(3, 186, 247, 0.781);
+    }
+    .blogs a:hover h3{
+      color: rgba(3, 186, 247, 0.781);
+    }
 
-.intro {
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #c0bbbb6d;
-  margin-bottom: 30px;
-  text-align: center;
-}
+    /* details styles */
+    .details{
+      position: relative;
+    }
+    .delete{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      padding: 8px;
+    }
+    .delete:hover{
+      cursor: pointer;
+      box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
 
-.intro img {
-  max-width: 100%;
-  height: auto;
-}
+    /* create styles */
+    .create-blog form{
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .create-blog input,
+    .create-blog textarea{
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+    .create-blog label{
+      display: block;
+      margin-top: 24px;
+    }
+    textarea{
+      height: 120px;
+    }
+    .create-blog button{
+      margin-top: 20px;
+      background: rgba(3, 186, 247, 0.781);
+      color: white;
+      padding: 6px;
+      border: 0;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 1rem;
+    }
 
-.cta{
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #c0bbbb6d;
-  text-align: center;
-}
+    .create-blog button:hover{
+      scale: 1.075;
+    }
 
-.button {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #555;
-}
-.content{
-  margin-left: 20px;
-}
-
-label{
-  color: #ffffff;
-}
-
-.create-blog {
-  text-align: center;
-  position: relative;
-  top: 25%;
-  max-width: 400px;
-  padding: 20px;
-  margin: 0 auto;
-  background-color: #b1adad60;
-}
-
-.create-blog input,
-.create-blog textarea{
-display: block;
-width: 100%;
-margin: 10px 0;
-padding: 8px;
-}
-
-.create-blog label{
-display: block;
-margin-top: 24px;
-}
-
-.create-blog input{
-  border-radius: 0.25rem;
-}
-
-textarea{
-height: 120px;
-}
-
-.create-blog button{
-  margin-top: 20px;
-  background:rgb(105, 222, 255);
-  color: white;
-  padding: 6px;
-  border: 0;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-
-footer{
-  color: #ffffff;
-}
-.not-found{
-  color: #ffffff;
-  font-size: 2rem;
-  line-height: 10rem;
-}
+    .blgimg{
+      height: auto;
+      width: 30%;
+      display: inline;
+      float: left;
+      margin: 10px;
+    }
+    .blgbody{
+      display: inline;
+      text-align: center;
+    }
